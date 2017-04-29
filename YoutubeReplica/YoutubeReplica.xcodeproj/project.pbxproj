@@ -16,6 +16,8 @@
 		B916C5281EAE8F45009CBDB6 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B916C5271EAE8F45009CBDB6 /* VideoCell.swift */; };
 		B916C52B1EAE925E009CBDB6 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B916C52A1EAE925E009CBDB6 /* MenuBar.swift */; };
 		B916C52E1EAEC650009CBDB6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B916C52D1EAEC650009CBDB6 /* Video.swift */; };
+		B92F69E01EB43B1D00204049 /* SettingsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F69DF1EB43B1D00204049 /* SettingsLauncher.swift */; };
+		B92F69E21EB4483800204049 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92F69E11EB4483800204049 /* SettingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B916C5271EAE8F45009CBDB6 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		B916C52A1EAE925E009CBDB6 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		B916C52D1EAEC650009CBDB6 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		B92F69DF1EB43B1D00204049 /* SettingsLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLauncher.swift; sourceTree = "<group>"; };
+		B92F69E11EB4483800204049 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				B916C5271EAE8F45009CBDB6 /* VideoCell.swift */,
 				B916C52A1EAE925E009CBDB6 /* MenuBar.swift */,
+				B92F69E11EB4483800204049 /* SettingCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B916C5131EAAA4FB009CBDB6 /* HomeController.swift */,
+				B92F69DF1EB43B1D00204049 /* SettingsLauncher.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -183,7 +189,9 @@
 			files = (
 				B916C5141EAAA4FB009CBDB6 /* HomeController.swift in Sources */,
 				B916C52E1EAEC650009CBDB6 /* Video.swift in Sources */,
+				B92F69E21EB4483800204049 /* SettingCell.swift in Sources */,
 				B916C5281EAE8F45009CBDB6 /* VideoCell.swift in Sources */,
+				B92F69E01EB43B1D00204049 /* SettingsLauncher.swift in Sources */,
 				B916C5251EAE8E97009CBDB6 /* Extensions.swift in Sources */,
 				B916C5121EAAA4FB009CBDB6 /* AppDelegate.swift in Sources */,
 				B916C52B1EAE925E009CBDB6 /* MenuBar.swift in Sources */,
