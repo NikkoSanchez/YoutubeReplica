@@ -9,13 +9,22 @@
 import UIKit
 
 class Setting: NSObject {
-    let name: String
+    let name: SettingName
     let imageName: String
     
-    init(name: String, imageName: String) {
+    init(name: SettingName, imageName: String) {
         self.name = name
         self.imageName = imageName
     }
+}
+
+enum SettingName: String {
+    case cancel = "Cancel"
+    case settings = "Settings"
+    case termsPrivacy = "Terms & Privacy Policy"
+    case sendFeedback = "Send Feedback"
+    case help = "Help"
+    case switchAccounts = "Switch Account"
 }
 
 class SettingsLauncher: NSObject {
@@ -33,7 +42,9 @@ class SettingsLauncher: NSObject {
     let cellHeight: CGFloat = 50
     
     let settings: [Setting] = {
-        return [Setting(name: "Settings", imageName: "settings"), Setting(name: "Terms & Privacy Policy", imageName: "privacy"), Setting(name: "Send Feedback", imageName: "feedback"), Setting(name: "Help", imageName: "help"), Setting(name: "Switch Accounts", imageName: "switch_account"), Setting(name: "Cancel", imageName: "cancel")]
+        let settingsSetting = Setting(name: .settings, imageName: "settings")
+        let cancelSetting = Setting(name: .cancel, imageName: "cancel")
+        return [settingsSetting, Setting(name: .termsPrivacy, imageName: "privacy"), Setting(name: .sendFeedback, imageName: "feedback"), Setting(name: .help, imageName: "help"), Setting(name: .switchAccounts, imageName: "switch_account"), cancelSetting]
     }()
     
     var homeConroller: HomeController?
@@ -77,7 +88,7 @@ class SettingsLauncher: NSObject {
             }
         }) { (completed: Bool) in
             
-            if setting.name != "" && setting.name != "Cancel" {
+            if setting.name != .cancel {
                 self.homeConroller?.showControllerForSetting(setting: setting)
             }
         }
